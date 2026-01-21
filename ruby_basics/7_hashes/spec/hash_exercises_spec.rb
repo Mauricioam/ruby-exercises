@@ -71,13 +71,13 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'remove favorite number exercise' do
 
-    it 'returns hash without key/value pair when included' do
+    xit 'returns hash without key/value pair when included' do
       my_favorites = { color: 'blue', number: 65, movie: 'Avengers: Endgame' }
       result = { color: 'blue', movie: 'Avengers: Endgame' }
       expect(remove_favorite_number(my_favorites)).to eq(result)
     end
 
-    it 'returns hash when key/value pair is not included' do
+    xit 'returns hash when key/value pair is not included' do
       my_favorites = { color: 'blue', movie: 'Avengers: Endgame' }
       expect(remove_favorite_number(my_favorites)).to eq(my_favorites)
     end
@@ -85,12 +85,12 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'favorite categories exercise' do
 
-    xit 'returns an array of the keys' do
+    it 'returns an array of the keys' do
       my_favorites = { color: 'blue', number: 65, movie: 'Avengers: Endgame' }
       expect(favorite_categories(my_favorites)).to eq([:color, :number, :movie])
     end
 
-    xit 'returns an empty array when hash is empty' do
+    it 'returns an empty array when hash is empty' do
       my_favorites = {}
       expect(favorite_categories(my_favorites)).to eq([])
     end
