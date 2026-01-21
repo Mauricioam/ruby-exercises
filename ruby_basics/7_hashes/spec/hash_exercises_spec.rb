@@ -20,17 +20,17 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'favorite color exercise' do
 
-    it 'returns a string' do
+    xit 'returns a string' do
       my_favorites = { color: 'blue', number: 65 }
       expect(favorite_color(my_favorites)).to eq('blue')
     end
     
-    it 'returns an array' do
+    xit 'returns an array' do
       my_favorites = { color: ['orange', 'green'], number: { lucky: 7 } }
       expect(favorite_color(my_favorites)).to eq(['orange', 'green'])
     end
 
-    it 'returns nil when the key is not found' do
+    xit 'returns nil when the key is not found' do
       my_favorites = { number: 21, movie: 'Avengers: Endgame' }
       expect(favorite_color(my_favorites)).to eq(nil)
     end
@@ -38,17 +38,17 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'favorite number exercise' do
 
-    xit 'returns an integer' do
+    it 'returns an integer' do
       my_favorites = { color: 'blue', number: 65 }
       expect(favorite_number(my_favorites)).to eq(65)
     end
 
-    xit 'returns a hash' do
+    it 'returns a hash' do
       my_favorites = { color: ['orange', 'green'], number: { lucky: 7 } }
       expect(favorite_number(my_favorites)).to eq({ lucky: 7 })
     end
 
-    xit 'returns the default number when the key is not found' do
+    it 'returns the default number when the key is not found' do
       my_favorites = { color: ['orange', 'green'], movie: 'Avengers: Endgame' }
       expect(favorite_number(my_favorites)).to eq(42)
     end
