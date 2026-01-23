@@ -14,12 +14,17 @@ end
 # parameters: current_sports and favorite_sports (both arrays)
 # return value: an array containing items in both arrays
 # hint: use Array#intersection
-
+def common_sports(current,favorite)
+  current.intersection(favorite)
+end
 
 # method name: #alphabetical_list
 # parameter: games (an array)
 # return value: games, alphabetically sorted and duplicates removed
 # hint: chain Array#uniq and Array#sort together
+def alphabetical_list(games = [])
+  games.uniq.sort
+end
 
 
 # method name: #lucky_number
