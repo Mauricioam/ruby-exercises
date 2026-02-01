@@ -8,11 +8,13 @@ def display_guess_order(guesses)
   # use #each_with_index to iterate through each item of the guesses (an array)
   # use puts to output each list item "Guess #<number> is <item>" to console
   # hint: the number should start with 1
+guesses.each.with_index(1) { |guest, index| puts "Guess ##{index} is #{guest}" }
 end
 
 def find_absolute_values(numbers)
   # use #map to iterate through each item of the numbers (an array)
   # return an array of absolute values of each number
+  numbers.map {|value| value.abs}
 end
 
 def find_low_inventory(inventory_list)
