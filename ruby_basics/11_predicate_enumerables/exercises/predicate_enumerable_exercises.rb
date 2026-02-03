@@ -1,6 +1,13 @@
 def coffee_drink?(drink_list)
   # use #include? to return true when the drink_list (array) contains the string "coffee" or "espresso"
+  if(drink_list.include?("coffee") || drink_list.include?("espresso"))
+    true
+  else
+    false
+  end
+  
 end
+
 
 def correct_guess?(guess_list, answer)
   # use #any? to return true when any element of the guess_list (array) equals the answer (number)
