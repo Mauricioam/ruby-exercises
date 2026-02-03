@@ -11,6 +11,7 @@ end
 
 def correct_guess?(guess_list, answer)
   # use #any? to return true when any element of the guess_list (array) equals the answer (number)
+  guess_list.any? { |answers| answers == answer }
 end
 
 def twenty_first_century_years?(year_list)
